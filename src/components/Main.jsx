@@ -6,10 +6,7 @@ export default function Main() {
 
     const listItems = addIngredient.map(item => <li key={item}>{item}</li>)
 
-    function handleSubmit(event) {
-        event.preventDefault()
-
-        const formData = new FormData(event.currentTarget)
+    function addItem(formData) {
         const ingredient = formData.get('ingredient')
 
         setAddIngredient(prevIngredients => [...prevIngredients, ingredient])
@@ -17,7 +14,7 @@ export default function Main() {
 
     return (
         <main>
-            <form onSubmit={handleSubmit}>
+            <form action={addItem}>
                 <input 
                     type="search"
                     name="ingredient" 
