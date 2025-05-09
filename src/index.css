@@ -15,6 +15,7 @@ body {
 
 main {
     background: #FAFAF8;
+    padding-bottom: 66px;
 }
 
 /* Header styles */
@@ -47,7 +48,7 @@ form {
     display: flex;
     justify-content: center;
     gap: 12px;
-    padding: 67px 0 75px 0;
+    padding-top: 67px;
 }
 
 input {
@@ -77,4 +78,65 @@ form button {
     font-family: inherit;
     font-size: .875rem;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Section syltes  */
+
+section {
+    margin: 48px 63px 0 63px;   
+}
+
+h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+section li {
+    color: #475467;
+    margin-bottom: 20px;
+}
+
+section li::marker {
+    color: #475467;
+}
+
+ul {
+    margin-bottom: 44px;
+}
+
+.getRecipe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0EFEB;
+    padding: 28px 42px;
+    border-radius: 8px;
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+section p {
+    color: #6B7280;
+    font-size: .875rem;
+    line-height: 20px;
+}
+
+section button {
+    background-color: #D17557;
+    color: #FAFAF8;
+    border: none;
+    padding: 9px 17px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 20px;
+    font-family: inherit;
 }
