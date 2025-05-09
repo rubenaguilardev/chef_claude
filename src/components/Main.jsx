@@ -16,7 +16,7 @@ export default function Main() {
         <main>
             <form action={addItem}>
                 <input 
-                    type="search"
+                    type="s"
                     name="ingredient" 
                     placeholder="e.g. oregano" 
                     aria-label="add ingredient"
