@@ -2,7 +2,7 @@ import logo from '../assets/logo.png'
 
 const Header = () => {
     return (
-        <header className='shadow'>
+        <header className='shadow bg-white'>
             <div className='flex justify-center items-center gap-3 py-6'>
                 <img 
                     src={logo} 
