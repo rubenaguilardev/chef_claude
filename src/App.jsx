@@ -1,6 +1,11 @@
+import Header from "./components/Header"
+
 const App = () => {
   return (
-    <h1 className="text-4xl">Chef Claude</h1>
+    <div className="min-h-screen overflow-hidden">
+      <Header />
+    </div>
+    
   )
 }
 
