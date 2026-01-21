@@ -11,7 +11,6 @@ const Main = () => {
         const formData = new FormData(e.currentTarget)
         const newIngredient = formData.get('addIngredient')
         setIngredients(prev => [...prev, newIngredient])
-        form.clear()
     }
 
     return (
