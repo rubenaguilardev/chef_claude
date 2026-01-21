@@ -1,7 +1,25 @@
+import { useState } from "react"
+
 const Main = () => {
+
+    const [ingredients, setIngredients] = useState([])
+
+    const ingredientListItems = ingredients.map(ingredient => <li>{ingredient}</li>)
+
+    const handleSubmit = e => {
+        e.preventDefault()
+        const formData = new FormData(e.currentTarget)
+        const newIngredient = formData.get('addIngredient')
+        setIngredients(prev => [...prev, newIngredient])
+        form.clear()
+    }
+
     return (
-        <main className="pt-17 pb-20 px-6">
-            <form className="flex justify-center gap-3">
+        <main className="py-17 px-6">
+            <form 
+                onSubmit={handleSubmit}
+                className="flex justify-center gap-3"
+            >
                 <input 
                     type="text"
                     id='addIngredient'
@@ -17,6 +35,9 @@ const Main = () => {
                     + Add ingredient
                 </button>
             </form>
+            <ul>
+                {ingredientListItems}
+            </ul>
         </main>
     )
 }
