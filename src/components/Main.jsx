@@ -6,9 +6,7 @@ const Main = () => {
 
     const ingredientListItems = ingredients.map(ingredient => <li>{ingredient}</li>)
 
-    const handleSubmit = e => {
-        e.preventDefault()
-        const formData = new FormData(e.currentTarget)
+    const addIngredient = formData=> {
         const newIngredient = formData.get('addIngredient')
         setIngredients(prev => [...prev, newIngredient])
     }
@@ -16,7 +14,7 @@ const Main = () => {
     return (
         <main className="py-17 px-6">
             <form 
-                onSubmit={handleSubmit}
+                action={addIngredient}
                 className="flex justify-center gap-3"
             >
                 <input 
