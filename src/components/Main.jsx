@@ -32,9 +32,13 @@ const Main = () => {
                     + Add ingredient
                 </button>
             </form>
-            <ul>
-                {ingredientListItems}
-            </ul>
+            <div className="w-148 mx-auto my-12">
+                <h2 className="text-3xl font-semibold mb-6">Ingredients on hand:</h2>
+                <ul>
+                    {ingredientListItems}
+                </ul>
+            </div>
+            
         </main>
     )
 }
