@@ -41,10 +41,10 @@ const Main = () => {
             <div className="max-w-148 mx-auto flex justify-between items-center rounded-lg px-12 py-7 bg-[#F0EFEB]">
                 <div>
                     <h2 className="text-lg font-medium mb-2">Ready for a recipe?</h2>
-                    <p className="text-lg text-[#6B7280]">Generate a recipe from your list of ingredients</p>
+                    <p className="text-sm text-[#6B7280]">Generate a recipe from your list of ingredients</p>
                 </div>
                 <div>
-                    <button className="text-sm font-medium bg-[#D17557] text-[#FAFAF8] px-4.25 py-2.25">Get a recipe</button>
+                    <button className="text-sm font-medium bg-[#D17557] text-[#FAFAF8] px-4.25 py-2.25 rounded-md cursor-pointer">Get a recipe</button>
                 </div>
                 
             </div>
