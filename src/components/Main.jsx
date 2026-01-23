@@ -38,6 +38,16 @@ const Main = () => {
                     {ingredientListItems}
                 </ul>
             </div>
+            <div className="flex bg-[#F0EFEB]">
+                <div>
+                    <h2>Ready for a recipe?</h2>
+                    <p>Generate a recipe from your list of ingredients</p>
+                </div>
+                <div>
+                    <button>Get a recipe</button>
+                </div>
+                
+            </div>
             
         </main>
     )
