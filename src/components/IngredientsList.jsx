@@ -7,7 +7,7 @@ const IngredientsList = (props) => {
             <div className="my-12">
                 <h2 className="text-3xl font-semibold mb-6">Ingredients on hand:</h2>
                 <ul>
-                    {props.ingredientListItems}
+                    {ingredientListItems}
                 </ul>
             </div>
             { props.ingredients.length > 3 &&

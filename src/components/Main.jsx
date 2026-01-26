@@ -40,7 +40,6 @@ const Main = () => {
             </form>
             { ingredients.length > 0 && 
                 <IngredientsList 
-                    ingredientListItems={ingredientListItems} 
                     ingredients={ingredients} 
                     toggleRecipeShown={toggleRecipeShown}
                 />
