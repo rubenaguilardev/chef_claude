@@ -7,8 +7,6 @@ const Main = () => {
     const [ingredients, setIngredients] = useState([])
     const [recipeShown, setRecipeShown] = useState(false)
 
-    const ingredientListItems = ingredients.map(ingredient => <li className="list-disc ml-6 text-gray-600 text-lg mb-3">{ingredient}</li>)
-
     const addIngredient = formData=> {
         const newIngredient = formData.get('addIngredient')
         setIngredients(prev => [...prev, newIngredient])

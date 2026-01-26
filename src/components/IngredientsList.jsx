@@ -1,4 +1,7 @@
 const IngredientsList = (props) => {
+
+    const ingredientListItems = props.ingredients.map(ingredient => <li className="list-disc ml-6 text-gray-600 text-lg mb-3">{ingredient}</li>)
+
     return (
         <section>
             <div className="my-12">
