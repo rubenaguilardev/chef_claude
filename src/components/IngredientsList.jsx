@@ -15,7 +15,7 @@ const IngredientsList = (props) => {
                     </div>
                     <div>
                         <button 
-                            onClick={() => setRecipeShown(prev => !prev)}
+                            onClick={props.toggleRecipeShown}
                             className="text-sm font-medium bg-[#D17557] text-[#FAFAF8] px-4.25 py-2.25 rounded-md cursor-pointer">Get a recipe</button>
                     </div>
                 </div>

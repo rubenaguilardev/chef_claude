@@ -14,6 +14,10 @@ const Main = () => {
         setIngredients(prev => [...prev, newIngredient])
     }
 
+    const toggleRecipeShown = () => {
+        setRecipeShown(prev => !prev)
+    }
+
     return (
         <main className="py-17 px-6 max-w-148 mx-auto">
             <form 
@@ -37,7 +41,11 @@ const Main = () => {
                 </button>
             </form>
             { ingredients.length > 0 && 
-                <IngredientsList ingredientListItems={ingredientListItems} ingredients={ingredients}/>
+                <IngredientsList 
+                    ingredientListItems={ingredientListItems} 
+                    ingredients={ingredients} 
+                    toggleRecipeShown={toggleRecipeShown}
+                />
             }
             { recipeShown && 
                 <Recipe />
